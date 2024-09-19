@@ -1,4 +1,4 @@
-package com.example.tocoron_app_flutter
+package com.tocoron.tocoron_app_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 
