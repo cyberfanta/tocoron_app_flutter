@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:tocoron_app_flutter/presentation/common_widgets/backgrounds/error_message_cubit.dart';
 import 'package:tocoron_app_flutter/presentation/view/welcome_view.dart';
 
 import 'app/lang/ui_texts.dart';
@@ -18,6 +19,9 @@ void main() {
         providers: [
           ChangeNotifierProvider(
             create: (context) => UiTexts(const Locale('es')),
+          ),
+          BlocProvider<ErrorMessageCubit>(
+            create: (context) => ErrorMessageCubit(),
           ),
         ],
         child: const MyApp(),
