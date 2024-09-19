@@ -17,9 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-flutter@v3
-        with:
-          flutter-version: 'stable'
+#      - uses: actions/setup-flutter@v3
+#        with:
+#          flutter-version: 'stable'
 
       - name: Install dependencies
         run: flutter pub get
